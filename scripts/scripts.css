@@ -31,6 +31,7 @@
     text-decoration: none;
     display: inline-block;
     font-size: 40px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
     margin: 4px 2px;
     cursor: pointer;
 }
