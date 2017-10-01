@@ -1,11 +1,17 @@
 .container {
     position: relative;
 }
+.container:hover .image {
+  opacity: 0.3;
+}
+.container:hover .middle {
+  opacity: 1;
+}
 .image {
   opacity: 1;
   display: block;
-  width: 1675px;
-  height: 795px;
+  width: 1350px;
+  height: 630px;
   transition: .5s ease;
   backface-visibility: hidden;
 }
@@ -17,12 +23,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%)
-}
-.container:hover .image {
-  opacity: 0.3;
-}
-.container:hover .middle {
-  opacity: 1;
 }
 .button {
     background-color: #b0e0e6 ;
