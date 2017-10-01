@@ -189,10 +189,11 @@ body {font-family: Verdana,sans-serif;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 1500px;
   position: relative;
   margin: auto;
   text-align: center;
+  border-style: solid;
 }
 
 /* Caption text */
