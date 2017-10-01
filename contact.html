@@ -6,6 +6,44 @@
 	<body bgcolor="#18fbbc">
 </head>
 <body>
+	<div class="w3-sidebar w3-bar-block	w3-card-2 w3-animate-left" style="display:none" id="mySidebar">
+  		<button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+  		<a href="profile.html" class="w3-bar-item w3-button"> PROFILE </a>
+  		<a href="contact.html" class="w3-bar-item w3-button"> CONTACT </a>
+  		<a href="about.html" class="w3-bar-item w3-button"> ABOUT ME </a>
+	</div>
+	<div class="w3-teal">
+  		<button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+  		<div class="w3-container">
+    		<h1>
+    			<center>
+    				HOME
+    			</center>
+    		</h1>
+  		</div>
+	</div>
 
+
+	<script>
+	var slideIndex = 0;
+	showSlides();
+
+	function showSlides() {
+    	var i;
+    	var slides = document.getElementsByClassName("mySlides");
+    	var dots = document.getElementsByClassName("dot");
+    	for (i = 0; i < slides.length; i++) {
+       		slides[i].style.display = "none";  
+    	}
+    	slideIndex++;
+    	if (slideIndex > slides.length) {slideIndex = 1}    
+    	for (i = 0; i < dots.length; i++) {
+        	dots[i].className = dots[i].className.replace(" active", "");
+    	}
+    	slides[slideIndex-1].style.display = "block";  
+    	dots[slideIndex-1].className += " active";
+    	setTimeout(showSlides, 2000); // Change image every 2 seconds
+	}
+	</script>
 </body>
 </html>
