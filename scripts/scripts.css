@@ -277,4 +277,6 @@ h1 {
 	text-shadow: 0 0 70px #ffffff;
 	text-decoration: underline;
     text-decoration-color: red;
+	background-color: powderblue;
+	color: black;
 }
