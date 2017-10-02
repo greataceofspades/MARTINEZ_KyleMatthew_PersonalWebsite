@@ -6,6 +6,18 @@
 	<body bgcolor="#7ec0ee">
 </head>
 <body>
+	<div>
+		<marquee behavior="scroll" bgcolor="#7ec0ee" loop="-1" width="100%">
+   			<i>
+   				<font color="blue">
+      				Today's date is : 
+       				<strong>
+      					<span id="time"></span>
+       				</strong>           
+       			</font>
+   			</i>
+		</marquee>
+	</div>
 	<div class="w3-sidebar w3-bar-block	w3-card-2 w3-animate-left" style="display:none" id="mySidebar">
   		<button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
   		<a href="main.html" class="w3-bar-item w3-button"> HOME </a>
@@ -89,6 +101,10 @@
 	function w3_close() {
   		document.getElementById("mySidebar").style.display = "none";
 	}
+	</script>
+	<script>
+		var today = new Date();
+		document.getElementById('time').innerHTML=today;
 	</script>
 </body>
 </html>
