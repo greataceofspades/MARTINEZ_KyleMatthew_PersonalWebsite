@@ -164,7 +164,7 @@
 	box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
 }
 
-.w3-teal,.w3-hover-teal:hover{color:#fff!important;background-color:#000080!important}
+.w3-teal,.w3-hover-teal:hover{color:#fff!important;background-color:#000080	!important}
 
 .w3-container:after,.w3-container:before,.w3-panel:after,.w3-panel:before,.w3-row:after,.w3-row:before,.w3-row-padding:after,.w3-row-padding:before,
 .w3-container,.w3-panel{
@@ -271,4 +271,10 @@ p.ex2 {
 
 p.ex3 {
 	text-indent: 50px;
+}
+
+h1 {
+	text-shadow: 0 0 70px #ffffff;
+	text-decoration: underline;
+    text-decoration-color: red;
 }
